@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       MaiNetCare Models
  * Plugin URI:        https://github.com/mmai1554/mncmodels.git
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Models (CPTs) and Shortcodes for the mainetcare-website
  * Version:           1.0.0
  * Author:            MaiNetCare GmbH
  * Author URI:        https://mainetcare
