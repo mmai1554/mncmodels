@@ -1,32 +1,30 @@
-(function( $ ) {
-	'use strict';
+(function ($) {
+    "use strict";
+    $.fn.responsiveTable = function() {
+        var toggleColumns = function($table) {
+            var selectedControls = [];
+            $table.find(".Accordion, .Tab").each( function() {
+                selectedControls.push( $(this).attr("aria-selected") );
+            });
+            var cellCount = 0, colCount = 0;
+            var setNum = $table.find(".Rtable-cell").length / Math.max( $table.find(".Tab").length, $table.find(".Accordion").length );
+            $table.find(".Rtable-cell").each( function() {
+                $(this).addClass("hiddenSmall");
+                if( selectedControls[colCount] === "true" ) $(this).removeClass("hiddenSmall");
+                cellCount++;
+                if( cellCount % setNum === 0 ) colCount++;
+            });
+        };
+        $(this).each(function(){ toggleColumns($(this)); });
 
-	/**
-	 * All of the code for your public-facing JavaScript source
-	 * should reside in this file.
-	 *
-	 * Note: It has been assumed you will write jQuery code here, so the
-	 * $ function reference has been prepared for usage within the scope
-	 * of this function.
-	 *
-	 * This enables you to define handlers, for when the DOM is ready:
-	 *
-	 * $(function() {
-	 *
-	 * });
-	 *
-	 * When the window is loaded:
-	 *
-	 * $( window ).load(function() {
-	 *
-	 * });
-	 *
-	 * ...and/or other possibilities.
-	 *
-	 * Ideally, it is not considered best practise to attach more than a
-	 * single DOM-ready or window-load handler for a particular page.
-	 * Although scripts in the WordPress core, Plugins and Themes may be
-	 * practising this, we should strive to set a better example in our own work.
-	 */
+        $(this).find(".Tab").click( function() {
+            $(this).attr("aria-selected","true").siblings().attr("aria-selected","false");
+            toggleColumns( $(this).parents(".Rtable") );
+        });
 
-})( jQuery );
+    };
+    $( document ).ready(function() {
+        $(".js-RtableTabs").responsiveTable();
+    });
+
+}(jQuery));

@@ -27,7 +27,7 @@ class Mncmodels_Public {
 	 *
 	 * @since    1.0.0
 	 * @access   private
-	 * @var      string    $plugin_name    The ID of this plugin.
+	 * @var      string $plugin_name The ID of this plugin.
 	 */
 	private $plugin_name;
 
@@ -36,21 +36,22 @@ class Mncmodels_Public {
 	 *
 	 * @since    1.0.0
 	 * @access   private
-	 * @var      string    $version    The current version of this plugin.
+	 * @var      string $version The current version of this plugin.
 	 */
 	private $version;
 
 	/**
 	 * Initialize the class and set its properties.
 	 *
+	 * @param string $plugin_name The name of the plugin.
+	 * @param string $version The version of this plugin.
+	 *
 	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of the plugin.
-	 * @param      string    $version    The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->version     = $version;
 
 	}
 
@@ -97,6 +98,20 @@ class Mncmodels_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/mncmodels-public.js', array( 'jquery' ), $this->version, false );
+
+	}
+
+	public function register_shortcode_mi_prices_webcare() {
+		add_shortcode( 'mi_price_webcare', function ( $params ) {
+			// init:
+			$a     = shortcode_atts( array(
+				'title' => 'Downloads'
+			), $params );
+			$title = $a['title'];
+			ob_start();
+			require_once plugin_dir_path(__FILE__) . 'partials/tabtable_prices_website_pflege.php';
+			return ob_get_clean();
+		});
 
 	}
 
