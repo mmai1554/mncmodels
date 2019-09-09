@@ -3,12 +3,12 @@
     $.fn.responsiveTable = function() {
         var toggleColumns = function($table) {
             var selectedControls = [];
-            $table.find(".Accordion, .Tab").each( function() {
+            $table.find(".Tab").each( function() {
                 selectedControls.push( $(this).attr("aria-selected") );
             });
             var cellCount = 0, colCount = 0;
-            var setNum = $table.find(".Rtable-cell").length / Math.max( $table.find(".Tab").length, $table.find(".Accordion").length );
-            $table.find(".Rtable-cell").each( function() {
+            var setNum = $table.find(".mi-pricetable-cell").length / Math.max( $table.find(".Tab").length);
+            $table.find(".mi-pricetable-cell").each( function() {
                 $(this).addClass("hiddenSmall");
                 if( selectedControls[colCount] === "true" ) $(this).removeClass("hiddenSmall");
                 cellCount++;
