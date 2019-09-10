@@ -13,7 +13,7 @@
 	<div style="order:1;" class="mi-pricetable-cell mi-pricetable-cell--head">
         <h4>Website-Pflege nach Aufwand</h4>
     </div>
-	<div style="order:2;" class="mi-pricetable-cell"><strong>20,- EUR / Standard-Auftrag</strong></div>
+	<div style="order:2;" class="mi-pricetable-cell mi-price"><strong>20,- EUR / Standard-Auftrag</strong></div>
 	<div style="order:3;" class="mi-pricetable-cell">
         <ul class="mi-ticks mi-smaller mi-med">
             <li>Ein Standard-Auftrag entspricht ca. 15 Min. Arbeitszeit im Fair-Use Modell (<a href="#">was ist das?</a>)</li>
@@ -24,14 +24,14 @@
             <li>Mit Vertraulichkeitsvereinbarung</li>
         </ul>
     </div>
-	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot"><strong>Lord of Winterfell</strong></div>
+	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta"><button>Gleich ordern...</button></div>
 
     <!--Col 2-->
     <div style="order:0;" class="mi-pricetable-cell mi-no-border">
         <img class="aligncenter align-bottom" src="https://dev.mainetcare.de/wp-content/uploads/2019/06/pflanze_target.svg" width="60">
     </div>
 	<div style="order:1;" class="mi-pricetable-cell mi-pricetable-cell--head"><h3>Website-Pflege Proaktiv</h3></div>
-	<div style="order:2;" class="mi-pricetable-cell aligncenter"><strong>100,- EUR / Monat</strong></div>
+	<div style="order:2;" class="mi-pricetable-cell mi-price"><strong>100,- EUR / Monat</strong></div>
 	<div style="order:3;" class="mi-pricetable-cell">
         <ul class="mi-ticks mi-smaller mi-med">
             <li>Kontingent 1 Std. Website-Pflege</li>
@@ -43,15 +43,23 @@
             <li>Laufzeit: 12 Monate</li>
         </ul>
     </div>
-	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot"><strong>Knows nothing</strong></div>
+	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta"><button>Jetzt buchen...</button></div>
 
     <!--Col 3-->
     <div style="order:0;" class="mi-pricetable-cell mi-no-border">
         <img class="aligncenter" src="https://dev.mainetcare.de/wp-content/uploads/2019/06/gartenschaufel.svg" width="60">
     </div>
 	<div style="order:1;" class="mi-pricetable-cell mi-pricetable-cell--head"><h4>Individuell</h4></div>
-	<div style="order:2;" class="mi-pricetable-cell">Has a sword named Needle</div>
-	<div style="order:3;" class="mi-pricetable-cell">Direwolf: Nymeria</div>
-	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot"><strong>No one</strong></div>
+	<div style="order:2;" class="mi-pricetable-cell mi-price">Nach Ihren Bedürfnissen</div>
+	<div style="order:3;" class="mi-pricetable-cell">
+        <ul class="mi-ticks mi-smaller mi-med">
+            <li>Ab 2 Std. Website-Pflege Kontingent</li>
+            <li>Alle Website-Pflege und SEO-Maßnahmen wie Proaktiv</li>
+            <li>Alle Analytics Maßnahmen</li>
+            <li>7% Rabatt auf weitere Standard-Aufträge.</li>
+            <li>Laufzeit: 12 Monate</li>
+        </ul>
+    </div>
+	<div style="order:4;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta"><button>Angebot einholen</button></div>
 
 </div>
