@@ -85,24 +85,17 @@ class Mncmodels_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Mncmodels_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Mncmodels_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/mncmodels-public.js', array( 'jquery' ), $this->version, false );
+
+		// Import Stacktable on Prices Website:
+		if( is_page( [ 'managed-wordpress-hosting-preise' ] ) ){
+			wp_enqueue_script( 'stacktable', plugin_dir_url( __FILE__ ) . 'js/stacktable.js', array( 'jquery' ), $this->version, false );
+		}
 
 	}
 
 	public function register_shortcode_mi_prices_webcare() {
-		add_shortcode( 'mi_price_webcare', function ( $params ) {
+		add_shortcode( 'mi_prices_webcare', function ( $params ) {
 			// init:
 			$a     = shortcode_atts( array(
 				'title' => 'Downloads'
@@ -110,6 +103,20 @@ class Mncmodels_Public {
 			$title = $a['title'];
 			ob_start();
 			require_once plugin_dir_path(__FILE__) . 'partials/tabtable_prices_website_pflege.php';
+			return ob_get_clean();
+		});
+
+	}
+
+	public function register_shortcode_mi_prices_hosting() {
+		add_shortcode( 'mi_prices_hosting', function ( $params ) {
+			// init:
+			$a     = shortcode_atts( array(
+				'title' => 'Downloads'
+			), $params );
+			$title = $a['title'];
+			ob_start();
+			require_once plugin_dir_path(__FILE__) . 'partials/tabtable_prices_hosting.php';
 			return ob_get_clean();
 		});
 
