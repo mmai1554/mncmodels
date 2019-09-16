@@ -47,7 +47,7 @@
 
     <!--Col 3-->
     <div style="order:0;" class="mi-pricetable-cell mi-no-border">
-        <img class="aligncenter" src="https://dev.mainetcare.de/wp-content/uploads/2019/06/gartenschaufel.svg" width="60">
+        <img alt="Individuelles Website Management" class="aligncenter" src="https://dev.mainetcare.de/wp-content/uploads/2019/06/gartenschaufel.svg" width="60">
     </div>
 	<div style="order:1;" class="mi-pricetable-cell mi-pricetable-cell--head"><h4>Individuell</h4></div>
 	<div style="order:2;" class="mi-pricetable-cell mi-price">Nach Ihren Bedürfnissen</div>

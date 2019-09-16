@@ -94,6 +94,12 @@ class Mncmodels_Public {
 
 	}
 
+	public function register_shortcodes() {
+		$this->register_shortcode_mi_prices_webcare();
+		$this->register_shortcode_mi_prices_carepakete();
+		$this->register_shortcode_mi_prices_hosting();
+	}
+
 	public function register_shortcode_mi_prices_webcare() {
 		add_shortcode( 'mi_prices_webcare', function ( $params ) {
 			// init:
@@ -107,6 +113,17 @@ class Mncmodels_Public {
 		});
 
 	}
+
+	public function register_shortcode_mi_prices_carepakete() {
+		add_shortcode( 'mi_prices_carepakete', function ( $params ) {
+			// init:
+			ob_start();
+			require_once plugin_dir_path(__FILE__) . 'partials/tabtable_prices_carepakete.php';
+			return ob_get_clean();
+		});
+
+	}
+
 
 	public function register_shortcode_mi_prices_hosting() {
 		add_shortcode( 'mi_prices_hosting', function ( $params ) {
