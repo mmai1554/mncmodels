@@ -58,8 +58,6 @@ $order = 0;
             <h4>Leistungen:</h4>
 			<?= $ticklist( $li( $arrHaveAll ) ) ?>
         </div>
-        <h4>Website-Pflege:</h4>
-		<?= $ticklist( $li( [ 'pro angef. 15 Min: € 18,50' ] ) ) ?>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <button>Anfrage stellen</button>
@@ -92,8 +90,6 @@ $order = 0;
 		<?= $ticklist( $li( [
 
 		] ) ) ?>
-        <h4>Website-Pflege:</h4>
-		<?= $ticklist( $li( [ 'pro angef. 15 Min: € 18,50' ] ) ) ?>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <button>Anfrage stellen</button>
@@ -120,8 +116,6 @@ $order = 0;
 				'Individuelle Datenbank- und Servereinstellungen für optimale Performanz',
 			] ) ) ?>
         </div>
-        <h4>Website-Pflege:</h4>
-		<?= $ticklist( $li( [ 'pro angef. 15 Min: € 18,50' ] ) ) ?>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <button>Anfrage stellen</button>
