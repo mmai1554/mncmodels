@@ -4,7 +4,7 @@
 	'Nächtliches Backup',
 	'Monitoring & Recovery',
 	'Sicherheitsupdates',
-    'DSGVO-Check nach Einrichtung'
+    'DSGVO-Check',
 ];
 $li               = function ( $list ) {
 	$html = [];
