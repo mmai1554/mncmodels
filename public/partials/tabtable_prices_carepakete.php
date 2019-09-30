@@ -54,13 +54,12 @@ $order = 0;
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-price">
         <span>€</span><strong>70,-</strong><br>
         <small>monatlich pro Website oder<br></small>
-        <p><span>€</span><strong>770,-</strong><br><small>pro 12 Monate<br>
-                (Sie sparen 1 Monatsbeitrag)</small>
+        <p><span>€</span><strong>720,-</strong><br><small>pro 12 Monate<br>
+                (Sie sparen über 1 Monatsbeitrag!)</small>
         </p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell">
-        <p>Alle notwendigen Wartungsmaßnahmen, damit Ihre Website stabil und sicher läuft!
-        </p>
+        <p>Proaktive Wartung und Service, damit Ihre Website stabil und sicher läuft!</p>
         <p>Geeignet für alle Website-Besitzer, die viele Inhalte Ihrer Website selbst pflegen können, sich aber nicht um
             Technik, Sicherheit und Administration kümmern möchten.
         </p>
@@ -82,9 +81,11 @@ $order = 0;
         <h3><?= $title_2 ?></h3>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-price">
-        <span>€</span><strong>60,-</strong><br>
-        <small>monatlich pro Website<br>
-            Einmalige Einrichtung: € 80,-</small>
+        <span>€</span><strong>100,-</strong><br>
+        <small>monatlich pro Website oder<br></small>
+        <p><span>€</span><strong>1100,-</strong><br><small>pro 12 Monate<br>
+                (Sie sparen 1 Monatsbeitrag)</small>
+        </p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell">
         <p class="mi-price-desc">Wordpress optimiertes Hosting inklusive technischer Wartung. Website-Pflege nach Aufwand.
