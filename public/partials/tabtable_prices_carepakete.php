@@ -1,10 +1,11 @@
 <?php $arrHaveAll = [
-	'Premium Hosting auf physikalischen Server',
-	'Optimiert auf Performance',
-	'Nächtliches Backup',
-	'Monitoring & Recovery',
-	'Sicherheitsupdates',
-    'DSGVO-Check',
+	'Regelmäßige Software-Aktualisierungen Ihres CMS inklusive Tests, ob alles noch einwandfrei funktioniert.',
+	'Betrieb Ihrer Website auf leistungsfähigen Internetserver zur Steigerung der Ladezeit. (Managed Hosting)',
+	'Nächtliche Datensicherung.',
+	'Überwachung auf Störungen und selbstständiges Eingreifen.',
+	'Verschlüsselung der Homepage mit Zertifikat.',
+	'DSGVO-Anpassung im Impressum.',
+	'Für Wordpress-Besitzer: Extra-Sicherheitspaket.',
 ];
 $li               = function ( $list ) {
 	$html = [];
@@ -18,13 +19,13 @@ $ticklist         = function ( $inner ) {
 	return '<ul class="mi-ticks mi-smaller">' . $inner . '</ul>';
 };
 
-$title_1 = 'Managed Premium';
-$title_2 = 'Managed Wordpress';
-$title_3 = 'Managed E-Commerce & Application';
+$title_1 = 'Wartung und Service';
+$title_2 = 'Wartung, Service + Inhaltspflege';
+$title_3 = 'Rundum-Sorglos-Paket';
 
-$price_1 = '<span>€</span> 50';
-$price_2 = '<span>€</span> 60';
-$price_3 = 'Auf Anfrage';
+$price_1 = '<span>€</span> 70';
+$price_2 = '<span>€</span> 100';
+$price_3 = 'Zum Festpreis auf Anfrage';
 
 $img_1 = '/wp-content/uploads/2019/06/blumentopf.svg';
 $img_2 = '/wp-content/uploads/2019/06/pflanze_target.svg';
@@ -51,18 +52,22 @@ $order = 0;
         <h3><?= $title_1 ?></h3>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-price">
-        <span>€</span><strong>50,-</strong><br>
-        <small>monatlich pro Website<br>
-            Einmalige Einrichtung: € 80,-</small>
+        <span>€</span><strong>70,-</strong><br>
+        <small>monatlich pro Website oder<br></small>
+        <p><span>€</span><strong>770,-</strong><br><small>pro 12 Monate<br>
+                (Sie sparen 1 Monatsbeitrag)</small>
+        </p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell">
-        <p class="mi-price-desc">Managed Premium Hosting inklusvive technischer Wartung der Website und Website-Pflege nach Aufwand.
-            Geeignet wenn Sie Ihre Website mit contao, Drupal oder statisch betreiben</p>
+        <p>Alle notwendigen Wartungsmaßnahmen, damit Ihre Website stabil und sicher läuft!
+        </p>
+        <p>Geeignet für alle Website-Besitzer, die viele Inhalte Ihrer Website selbst pflegen können, sich aber nicht um
+            Technik, Sicherheit und Administration kümmern möchten.
+        </p>
         <div class="mi-price-leistungen">
-            <h4>Leistungen:</h4>
 			<?= $ticklist( $li( $arrHaveAll ) ) ?>
         </div>
-        <p><a href="<?= $more ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
+        <p><a href="<?= $more ?>" title="Mehr Informationen über Wartung und Betreuung"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <a href="/anfrage?mi-products=Premium-Hosting" class="ast-button d-inline-block">Anfrage Managed Premium</a>
@@ -79,7 +84,7 @@ $order = 0;
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-price">
         <span>€</span><strong>60,-</strong><br>
         <small>monatlich pro Website<br>
-        Einmalige Einrichtung: € 80,-</small>
+            Einmalige Einrichtung: € 80,-</small>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell">
         <p class="mi-price-desc">Wordpress optimiertes Hosting inklusive technischer Wartung. Website-Pflege nach Aufwand.
@@ -91,7 +96,7 @@ $order = 0;
 			<?= $ticklist( $li( [
 				'Wordpress-Sicherheitspaket',
 				'Getestete Feature- und Plugin-Updates',
-                'Archivierungsoption'
+				'Archivierungsoption'
 			] ) ) ?>
         </div>
         <p><a href="<?= $more ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
