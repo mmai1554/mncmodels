@@ -42,6 +42,10 @@ $more1 = '/website-hosting-wartung-und-service';
 $more2 = '/website-wartung-service-und-pflege';
 $more3 = '/website-komplettbetreuung';
 
+$anfrage1 = urlencode('Care-Paket Fundament');
+$anfrage2 = urlencode('Care-Paket Wachstum');
+$anfrage3 = urlencode('Care-Paket Ernte');
+
 $order = 0;
 
 ?>
@@ -80,7 +84,7 @@ $order = 0;
         <p><a href="<?= $more1 ?>" title="Mehr Informationen über Wartung und Betreuung"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=Fundament" class="ast-button d-inline-block">Ja, <?= $title_1 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=<?= $anfrage1 ?>" class="ast-button d-inline-block">Ja, <?= $title_1 ?> ist mein Paket ...</a>
     </div>
 
 	<?php $order = 0; ?>
@@ -115,7 +119,7 @@ $order = 0;
         <p><a href="<?= $more2 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=Wachstum" class="ast-button d-inline-block">Ja, <?= $title_2 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=<?= $anfrage2 ?>" class="ast-button d-inline-block">Ja, <?= $title_2 ?> ist mein Paket ...</a>
     </div>
 
 	<?php $order = 0; ?>
@@ -149,7 +153,7 @@ $order = 0;
         <p><a href="<?= $more3 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=Ernte" class="ast-button d-inline-block">Ja, <?= $title_3 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=<?= $anfrage3 ?>" class="ast-button d-inline-block">Ja, <?= $title_3 ?> ist mein Paket ...</a>
     </div>
 
 </div>
