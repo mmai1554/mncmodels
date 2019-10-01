@@ -10,7 +10,7 @@
 //];
 $arrHaveAll = [
 	'Schnelle Seiten durch leistungsfähige Server',
-	'Nie mehr Fragen um die Technik - Wir machen das',
+	'Nie mehr Fragen zur Technik - Wir erledigen das',
 	'Immer Aktueller Stand Ihrer Software',
 	'Sicher im Netz',
 ];
@@ -38,7 +38,9 @@ $img_1 = '/wp-content/uploads/2019/06/blumentopf.svg';
 $img_2 = '/wp-content/uploads/2019/06/pflanze_target.svg';
 $img_3 = '/wp-content/uploads/2019/06/gartenschaufel.svg';
 
-$more = '/managed-premium-hosting';
+$more1 = '/website-hosting-wartung-und-service';
+$more2 = '/website-wartung-service-und-pflege';
+$more3 = '/website-komplettbetreuung';
 
 $order = 0;
 
@@ -75,10 +77,10 @@ $order = 0;
 			] ) ) ?>
         </div>
         <p>Perfekt geeignet für alle Besitzer üblicher Geschäfts- oder Vereins-Websites.</p>
-        <p><a href="<?= $more ?>" title="Mehr Informationen über Wartung und Betreuung"><small>Mehr Informationen...</small></a></p>
+        <p><a href="<?= $more1 ?>" title="Mehr Informationen über Wartung und Betreuung"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=Premium-Hosting" class="ast-button d-inline-block">Ja, <?= $title_1 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=Fundament" class="ast-button d-inline-block">Ja, <?= $title_1 ?> ist mein Paket ...</a>
     </div>
 
 	<?php $order = 0; ?>
@@ -110,10 +112,10 @@ $order = 0;
 			] ) ) ?>
         </div>
         <p>Geeignet für alle Besitzer von Geschäfts- oder Vereins-Websites, die ihre Website regelmäßig moderat aktualisieren.</p>
-        <p><a href="<?= $more ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
+        <p><a href="<?= $more2 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=Wordpress-Hosting" class="ast-button d-inline-block">Ja, <?= $title_2 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=Wachstum" class="ast-button d-inline-block">Ja, <?= $title_2 ?> ist mein Paket ...</a>
     </div>
 
 	<?php $order = 0; ?>
@@ -144,10 +146,10 @@ $order = 0;
 			] ) ) ?>
         </div>
         <p>Geeignet für Online-Shop Besitzer, größere Vereinsseiten oder Business-Websites mit kontinuierlichem Optimierungsbedarf.</p>
-        <p><a href="<?= $more ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
+        <p><a href="<?= $more3 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
-        <a href="/anfrage?mi-products=E-Commerce%20und%20Application%20Hosting" class="ast-button d-inline-block">Ja, <?= $title_3 ?> ist mein Paket ...</a>
+        <a href="/anfrage?mi-products=Ernte" class="ast-button d-inline-block">Ja, <?= $title_3 ?> ist mein Paket ...</a>
     </div>
 
 </div>
