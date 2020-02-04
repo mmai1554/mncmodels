@@ -13,6 +13,7 @@ $arrHaveAll = [
 	'Schnelle Ladezeiten durch leistungsfähige Server',
 	'Immer Aktueller Stand Ihrer Software',
 	'Sicher im Netz',
+    '1 Basis-Auftrag zur Seitenpflege pro Monat im Fair Use Modell'
 ];
 $li         = function ( $list ) {
 	$html = [];
@@ -109,7 +110,7 @@ $order = 0;
             <!--            <h4>Leistungen:</h4>-->
 			<?= $ticklist( $li( [
 				'Wartung + Betrieb + Service wie bei Care Paket Rund Umsorgt',
-				'4 Website Pflege Aufträge / Monat im Fair-Use Modell',
+				'4 Aufträge zur Seitenpflege pro Monat inklusive im Fair-Use Modell',
 			] ) ) ?>
 			<?= $ticklist( $li( [
 				'Noch mehr Pflege? Kein Problem: Wird nach Aufwand erledigt<br><small>(75,- EUR pro Std, 15-Minuten Taktung)</small>',
