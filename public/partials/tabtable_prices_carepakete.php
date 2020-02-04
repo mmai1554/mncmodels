@@ -9,8 +9,8 @@
 //	'Für Wordpress-Besitzer: Extra-Sicherheitspaket.',
 //];
 $arrHaveAll = [
-	'Schnelle Seiten durch leistungsfähige Server',
 	'Nie mehr Fragen zur Technik - Wir erledigen das',
+	'Schnelle Ladezeiten durch leistungsfähige Server',
 	'Immer Aktueller Stand Ihrer Software',
 	'Sicher im Netz',
 ];
@@ -26,7 +26,7 @@ $ticklist   = function ( $inner ) {
 	return '<ul class="mi-ticks mi-smaller">' . $inner . '</ul>';
 };
 
-$title_1 = 'Fundament';
+$title_1 = 'Rund Umsorgt';
 $title_2 = 'Wachstum';
 $title_3 = 'Ernte';
 
@@ -42,7 +42,7 @@ $more1 = '/website-hosting-wartung-und-service';
 $more2 = '/website-wartung-service-und-pflege';
 $more3 = '/website-komplettbetreuung';
 
-$anfrage1 = urlencode('Care-Paket Fundament');
+$anfrage1 = urlencode('Care-Paket Rund Umsorgt');
 $anfrage2 = urlencode('Care-Paket Wachstum');
 $anfrage3 = urlencode('Care-Paket Ernte');
 
@@ -108,15 +108,15 @@ $order = 0;
         <div class="mi-price-leistungen">
             <!--            <h4>Leistungen:</h4>-->
 			<?= $ticklist( $li( [
-				'Wartung + Betrieb + Service wie bei Care Paket Fundament',
-				'Zusätzlich jeden Monat 1/2&nbsp;Stunde Website-Pflege-Kontingent inklusive<br><small>Das reicht für ca. 2&nbsp;Standard-Aufträge</small>',
+				'Wartung + Betrieb + Service wie bei Care Paket Rund Umsorgt',
+				'4 Website Pflege Aufträge / Monat im Fair-Use Modell',
 			] ) ) ?>
 			<?= $ticklist( $li( [
 				'Noch mehr Pflege? Kein Problem: Wird nach Aufwand erledigt<br><small>(75,- EUR pro Std, 15-Minuten Taktung)</small>',
 			] ) ) ?>
         </div>
-        <p>Geeignet für alle Besitzer von Geschäfts- oder Vereins-Websites, die ihre Website regelmäßig moderat aktualisieren.</p>
-        <p><a href="<?= $more2 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
+        <p>Geeignet für Geschäfts- oder Vereins-Websites mit aktuellen News, Events oder vielen regelmäßigen Änderungen.</p>
+        <p><a href="<?= $more2 ?>" title="Mehr Informationen"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <a href="/anfrage?mi-products=<?= $anfrage2 ?>" class="ast-button d-inline-block">Ja, <?= $title_2 ?> ist mein Paket ...</a>
@@ -150,7 +150,7 @@ $order = 0;
 			] ) ) ?>
         </div>
         <p>Geeignet für Online-Shop Besitzer, größere Vereinsseiten oder Business-Websites mit kontinuierlichem Optimierungsbedarf.</p>
-        <p><a href="<?= $more3 ?>" title="Mehr Informationen über Managed Hosting"><small>Mehr Informationen...</small></a></p>
+        <p><a href="<?= $more3 ?>" title="Mehr Informationen über Ernte"><small>Mehr Informationen...</small></a></p>
     </div>
     <div style="order:<?= $order ++ ?>;" class="mi-pricetable-cell mi-pricetable-cell--foot mi-cta">
         <a href="/anfrage?mi-products=<?= $anfrage3 ?>" class="ast-button d-inline-block">Ja, <?= $title_3 ?> ist mein Paket ...</a>
